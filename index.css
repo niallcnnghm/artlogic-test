@@ -1,0 +1,103 @@
+.body {
+  margin: 0px !important;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  font-family: Helvetica, sans-serif;
+}
+
+div.full-image, div.information {
+  width: 50%;
+}
+
+div.full-image {
+  height: 100vh;
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+div.artlogic-text {
+  padding: 20px 50px;
+  height: 90vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.full-image h2 {
+  font-size: 24px;
+}
+
+h2.main-lettering {
+  font-size: 48px;
+}
+
+.full-image h3 {
+  font-size: 24px;
+}
+
+.information h1, #question-list {
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+#question-list {
+  font-size: 12px;
+}
+
+#question-list .question {
+  font-weight: bold;
+}
+
+#question-list .question span img {
+  height: 12px;
+}
+
+#question-list .answer {
+  display: none;
+  padding-top: 20px;
+  line-height: 1.5;
+}
+
+.faq-container {
+  padding: 10px 0;
+  border-bottom: 1px solid grey;
+}
+
+.faq-container:first-child {
+  border-top: 1px solid grey;
+}
+
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  div.full-image, div.information {
+    width: 100%;
+    min-height: 500px;
+  }
+
+  div.full-image {
+    position: relative;
+  }
+
+  .information h1, #question-list {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .information h1 {
+    margin-top: 40px;
+  }
+}
